@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/javatest"/>
+	<classpathentry kind="src" path="/entermedia"/>
+	<classpathentry exported="true" kind="lib" path="lib/jericho-html-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/PDFBox-0.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/FontBox-0.1.0-dev.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
