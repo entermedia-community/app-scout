@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+ <bean id="SiteMapModule" class="org.openedit.sitesearch.SiteMapModule">
+  	<property name="siteMapper"><ref bean="siteMapper" /></property>
+   </bean>
+
+  <bean id="siteMapper" class="org.openedit.sitesearch.SiteMapper">
+  	<property name="moduleManager"><ref bean="moduleManager" /></property>
+  	<property name="pageManager"><ref bean="pageManager" /></property>
+   </bean>
+
+  <bean id="SiteSearchModule" class="org.openedit.sitesearch.SiteSearchModule">
+  		<property name="searcherManager"><ref bean="searcherManager"/></property>
+   </bean>
+
+  <bean id="siteSearcher" class="org.openedit.sitesearch.SiteSearcher">
+  	<property name="moduleManager"><ref bean="moduleManager" /></property>
+  	<property name="rootDirectory"><ref bean="root" /></property>
+   </bean>
+
+  <bean id="htmlParser" class="org.openedit.sitesearch.parse.HtmlParser">
+   </bean>
+
+  <bean id="pdfParser" class="org.openedit.sitesearch.parse.PdfParser">
+   </bean>
+
+</beans>

@@ -1,0 +1,5 @@
+<search>
+	<starturl>http://yourwebsite/index.html</starturl>
+	<allow>http://yourwebsite/</allow>
+	<!-- allow>http://www.openeditgroup.com/</allow -->
+</search>

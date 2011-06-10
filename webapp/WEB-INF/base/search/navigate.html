@@ -1,0 +1,46 @@
+#if( $sitehits && $sitehits.total > 0 )
+	$sitehits.setHitsPerPage(15)
+	#set($thispage = $sitehits.getPage())
+	#set($resultsPage = "$home/search/results.html")
+	<table cellspacing=0 cellpadding=0 height=20 >
+	<tr>
+		
+	#if ( $sitehits )
+	<td nowrap  >
+		<p CLASS="ver11D">Displaying records $sitehits.getPageStart() - $sitehits.getPageEnd()  of $sitehits.total items
+		&nbsp;&nbsp;&nbsp;</p>
+	</td>
+	#end
+	
+	<td ><table>
+	<tr>
+	#foreach( $before in $sitehits.linksBefore() )
+	<td  class="navbox NAVBOX"><a href="$resultsPage?page=$before">$before</a></td>		
+	#end
+	<td  class="navboxselected"><a href="$resultsPage?page=$!thispage">$!thispage</a></div></td>
+	#foreach( $after in $sitehits.linksAfter() )
+	<td  class="navbox NAVBOX"><a href="$resultsPage?page=$after">$after</a></td>		
+	#end
+	</tr>
+	</table>
+	</td>
+	
+	<td nowrap valign="center">
+	#if( $sitehits.prevPage() )
+	<a href="$resultsPage?page=$sitehits.prevPage()" title="Previous ( alt shift p)" accesskey="p" ><img src="$home/search/layout/media/previous.jpg" width=20 border=0 /></a>
+	#end
+	</td>
+	<td nowrap valign="center">
+	#if ( $sitehits.nextPage() )
+	<a href="$resultsPage?page=$sitehits.nextPage()" title="Next (alt shift n)" accesskey="n"><img src="$home/search/layout/media/next.jpg" width=20 border=0 /></a>
+	#end
+	</td>
+
+	</tr>
+	</table>
+</form>
+
+#end
+
+
+

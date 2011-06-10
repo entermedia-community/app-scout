@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+	<path-action name="SiteSearchModule.search" />
+	<inner-layout>/search/layout/innerlayout.html</inner-layout>
+	<property name="editable">false</property>
+	<property name="title">Search</property>
+	
+</page>

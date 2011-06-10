@@ -1,0 +1,19 @@
+<div class="resultcontainer">
+#if( $sitehits && $sitehits.total == 0)
+	<p>No results found for <b>	$!url_util.xmlEscape("$!sitehits.friendlyQuery")</b></p>
+#end
+#foreach ( $hit in $sitehits.getPageOfHits() )
+    <div class="title">
+    	#if( $hit.title )
+    <a href="$hit.href">$hit.title</a>
+    	#else
+    <a href="$hit.href">$hit.href</a>    	
+    	#end
+    </div>
+    <div class="resultbody">
+	$sitehits.highlight($hit, "description") )
+	</div>
+    <div class="href">$hit.href</div>
+    <br>
+#end
+</div>

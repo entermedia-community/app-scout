@@ -1,0 +1,8 @@
+<page>
+ <property name="oeplugintype">openedit-search</property>
+  <property name="oeplugintitle">
+  	<value>Search</value>
+  	<value locale="es">Búsqueda</value>
+  </property>
+  <property name="oepluginbean">SiteSearchModule</property>
+</page>

@@ -1,0 +1,75 @@
+.NAVBOX
+{
+	color:           #FFFFFF;
+	background-color: #666666;
+}
+
+.hit {
+	font-weight: bold;
+}
+.href
+{
+	font-size: 8pt;
+	color: green;
+}
+.title
+{
+	font-size: 12pt;
+}
+
+.resultcontainer
+{
+	padding: 10px;
+}
+
+.navbox
+{
+	width: 17px;
+	height: 17px;
+	
+	text-align: center;
+	font-family:"Verdana", "Arial","Helvetica","Sans-serif";
+	font-size:10px;
+}
+
+.navbox A 
+{
+	color:           #FFFFFF;
+	text-decoration: none;
+	
+}
+.navbox A:visited
+{
+	color:           #FFFFFF;
+	text-decoration: none;
+}
+.navbox A:hover
+{
+	text-decoration: underline;
+}
+
+
+.navboxselected
+{
+	width: 17px;
+	height: 17px;
+	text-align: center;
+	font-family:"Verdana", "Arial","Helvetica","Sans-serif";
+	font-size:10px;
+	color:           #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+}
+.navboxselected A
+{
+	text-decoration: none;
+}
+.navboxselected A:visited
+{
+	text-decoration: none;
+}
+
+.navboxselected A:hover
+{
+	text-decoration: underline;
+}

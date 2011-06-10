@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group><group-name>administrators</group-name><users><user>cburkey</user><user>admin</user></users><permissions><permission>oe.edit.notify</permission><permission>oe.edit</permission><permission>oe.administration</permission><permission>oe.edit.ftpUpload</permission></permissions><properties/></group>

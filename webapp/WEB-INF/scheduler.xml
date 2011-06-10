@@ -1,0 +1,4 @@
+
+<configuration>
+        <action period="24h" startdelay="1h" path="/search/admin/crawl.html" username="admin" />
+</configuration>

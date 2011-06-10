@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+	<view-requirements>
+		<permission name="oe.administration"/>
+	</view-requirements>
+	<path-action name="SiteSearchModule.crawlWebSite" />
+</page>

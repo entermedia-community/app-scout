@@ -1,0 +1,6 @@
+<form name="search" action="$home/search/results.html" method="post">
+	<input name="query" size=30 value="$!url_util.xmlEscape( $sitehits.getInput('query') )">
+	<input type="submit" value="Search"> 
+		<a href="#" onclick="if(!window.name)window.name='editor_parent';window.open('$home/search/help.html','popupwindowname','alwaysRaised=yes,menubar=no,resizable=yes,x=10,y=10,width=830,height=550,scrollbars=yes' );return false;">Help</a>
+	
+</form>

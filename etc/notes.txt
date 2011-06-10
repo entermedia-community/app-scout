@@ -1,0 +1,4 @@
+To install make sure you copy over the clasees directory.
+
+Then edit the /search/urls.txt file classes/crawl-urlfileter.txt
+Edit the scheuler to run Search.crawl

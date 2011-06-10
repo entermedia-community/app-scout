@@ -1,0 +1,4 @@
+<page>
+	<page-action name="SiteSearchModule.loadPageOfSearch" />
+	<property name="editable">false</property>
+</page>
